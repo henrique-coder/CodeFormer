@@ -3,6 +3,7 @@
 </p>
 
 ## Towards Robust Blind Face Restoration with Codebook Lookup Transformer (NeurIPS 2022)
+#### Note: [fork](https://github.com/Henrique-Coder/CodeFormer) successfully tested on **Python 3.11.9**
 
 [Paper](https://arxiv.org/abs/2206.11253) | [Project Page](https://shangchenzhou.com/projects/CodeFormer/) | [Video](https://youtu.be/d3VDpkXlueI)
 

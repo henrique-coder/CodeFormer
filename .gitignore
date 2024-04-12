@@ -5,8 +5,8 @@ __pycache__
 
 # Directories
 weights
-.mytests/weights
-.mytests/codeformed_photos
+.gui/weights
+.gui/codeformed_photos
 
 # Files
 # ...
