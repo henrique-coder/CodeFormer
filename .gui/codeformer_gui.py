@@ -8,7 +8,7 @@ from subprocess import Popen
 
 def enhance_photo(bg_upsampler: str, face_upsample: str, upscaling_factor: int, fidelity_factor: int, file_path: str) -> None:
     venv_python_path = '../venv/Scripts/python.exe'
-    codeformer_command = f'"{venv_python_path if path.exists(Path(venv_python_path)) else "python"}" "../inference_codeformer.py" {bg_upsampler} {face_upsample} -s {upscaling_factor} -w {fidelity_factor} -i "{file_path}" -o "codeformed_photos"'
+    codeformer_command = f'"{venv_python_path if path.exists(Path(venv_python_path)) else "python"}" "../inference_codeformer.py" {bg_upsampler} {face_upsample} -s {upscaling_factor} -w {fidelity_factor} -i "{file_path}" -o "codeformed-photos"'
     print(f'{Fore.LIGHTYELLOW_EX}</--- > Enhancing your photo with AI... {Fore.YELLOW}(speed can vary greatly depending on your CPU or GPU, but in general it\'s not too slow)\n')
     Popen(sub('\s+', ' ', codeformer_command).strip(), shell=True)
 
